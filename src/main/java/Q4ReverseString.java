@@ -3,7 +3,9 @@
 public class Q4ReverseString {
 
     public static String reverse(String s) {
-        // TODO: Implement the recursive function to reverse the string
+      if(s.length() <= 0) {
         return "";
+      }
+      return s.charAt(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
     }
 }
